@@ -3,6 +3,31 @@
 # functions, shell options, and key bindings.
 #
 
+###
+# Don't touch this. Source Prezto.
+###
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+########## Customizations Below Here ##################
+
+
+
+###
+# Prezto config
+###
+
+# Disable command corrections
+unsetopt correct
+
+
+
+
+
+
+
+
 
 ###
 # Aliases and methods
@@ -32,6 +57,7 @@ alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold r
 alias gaddnw="git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -"
 
 alias gti="git" # Typos
+alias g="git"
 function ga() {
   git add .
   git commit -a -m "$1"
@@ -95,9 +121,5 @@ export NVM_DIR="$HOME/.nvm"
 
 
 
-###
-# Don't touch this. Source Prezto.
-###
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+
+
