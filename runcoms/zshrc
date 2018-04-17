@@ -15,14 +15,17 @@ fi
 
 
 ###
-# Prezto config
+# Prezto configuration
 ###
 
-# Disable command corrections
-unsetopt correct
+unsetopt correct # Disable command corrections
+unalias rm # Disable confirm for rm
 
-
-
+# "Prompt" Theme (`prompt -l` to list)
+autoload -Uz promptinit
+promptinit
+prompt pure
+# prompt sorin
 
 
 
