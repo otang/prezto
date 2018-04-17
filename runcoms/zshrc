@@ -1,13 +1,103 @@
 #
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
+# This file is sourced by interactive shells. It should define aliases,
+# functions, shell options, and key bindings.
 #
 
-# Source Prezto.
+
+###
+# Aliases and methods
+###
+
+# Sublime
+alias s='open -a "Sublime Text"'
+
+# Block and unblock reddit
+alias play="sudo workplay play"
+alias work="sudo workplay work"
+
+# Misc
+alias c="clear"
+alias listening="sudo lsof -P -n -iTCP -sTCP:LISTEN"
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Git
+alias gs="git status"
+
+# Fancy git log
+alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+
+# Git add no whitespace
+alias gaddnw="git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -"
+
+alias gti="git" # Typos
+function ga() {
+  git add .
+  git commit -a -m "$1"
+}
+
+function gco() {
+  git checkout $1
+}
+
+function gsu() {
+  git submodule update --init --recursive
+}
+
+function gp() {
+  git pull
+}
+
+function gd() {
+  git diff -w
+}
+
+function gb() {
+  git branch
+}
+
+function gbd() {
+  git branch -d $1
+}
+
+# Rails
+alias r="rails"
+alias h="heroku"
+
+# Node
+alias y="yarn"
+
+
+
+
+
+
+
+###
+# NVM
+##
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+###
+# RVM
+###
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+
+
+
+
+
+
+
+
+###
+# Don't touch this. Source Prezto.
+###
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
-
-# Customize to your needs...
