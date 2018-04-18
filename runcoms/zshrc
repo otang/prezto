@@ -85,7 +85,7 @@ function gp() {
 }
 
 function gd() {
-  git diff -w
+  git diff -w $1
 }
 
 function gb() {
