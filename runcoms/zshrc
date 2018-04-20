@@ -28,6 +28,14 @@ prompt pure
 # prompt sorin
 
 
+###
+# Autojump
+# Install: `brew install autojump`
+# https://github.com/wting/autojump
+###
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+
 
 ###
 # The fuck
