@@ -81,7 +81,7 @@ function ga() {
 }
 
 function gco() {
-  git checkout $1
+  git checkout $1 $2
 }
 
 function gsu() {
