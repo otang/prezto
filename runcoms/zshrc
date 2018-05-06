@@ -13,6 +13,12 @@ fi
 ########## Customizations Below Here ##################
 
 
+###
+# Keyboard shortcuts
+###
+
+bindkey \^U backward-kill-line # Mimic bash's CTRL + U functionality
+
 
 ###
 # Prezto configuration
