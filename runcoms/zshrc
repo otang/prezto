@@ -120,6 +120,10 @@ alias y="yarn"
 
 
 
+###
+# rbenv (better than RVM)
+###
+eval "$(rbenv init -)"
 
 
 ###
