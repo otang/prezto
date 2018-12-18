@@ -65,7 +65,7 @@ alias work="sudo workplay work"
 
 # Misc
 alias c="clear"
-alias listening="sudo lsof -P -n -iTCP -sTCP:LISTEN"
+alias listening="lsof -P -n -iTCP -sTCP:LISTEN"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
