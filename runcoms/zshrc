@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 #
 # This file is sourced by interactive shells. It should define aliases,
 # functions, shell options, and key bindings.
@@ -163,3 +165,5 @@ eval "$(rbenv init -)"
 
 
 
+
+# zprof
