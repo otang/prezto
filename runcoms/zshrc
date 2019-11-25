@@ -29,13 +29,6 @@ bindkey \^U backward-kill-line # Mimic bash's CTRL + U functionality
 unsetopt correct # Disable command corrections
 unalias rm # Disable confirm for rm
 
-# "Prompt" Theme (`prompt -l` to list)
-autoload -Uz promptinit
-promptinit
-prompt pure
-# prompt sorin
-
-
 ###
 # Autojump
 # Install: `brew install autojump`
@@ -126,8 +119,9 @@ function gp() {
   git pull
 }
 
+unalias gd
 function gd() {
-  git diff -w $1
+  git diff -w
 }
 
 function gb() {
