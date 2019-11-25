@@ -16,6 +16,11 @@ fi
 
 
 ###
+# Enable auto-completion for aliases
+###
+setopt completealiases
+
+###
 # Keyboard shortcuts
 ###
 
@@ -107,6 +112,7 @@ function ga() {
   git commit -a -m "$1"
 }
 
+unalias gco
 function gco() {
   git checkout $1 $2
 }
@@ -125,7 +131,7 @@ function gd() {
 }
 
 function gb() {
-  git branch
+  git branch $1 $2
 }
 
 function gbd() {
