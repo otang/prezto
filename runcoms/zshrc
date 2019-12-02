@@ -14,14 +14,15 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 
 # GIT
-# POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked git-aheadbehind git-stash git-remotebranch git-tagname)
-POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked git-aheadbehind git-remotebranch git-tagname)
+POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked git-aheadbehind git-stash git-remotebranch git-tagname)
 POWERLEVEL9K_HIDE_BRANCH_ICON=
 POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
 POWERLEVEL9K_VCS_UNSTAGED_ICON=''
 # POWERLEVEL9K_VCS_STAGED_ICON=''
 # POWERLEVEL9K_VCS_UNTRACKED_ICON=''
 
+# PATH
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
 
 
