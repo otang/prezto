@@ -153,7 +153,9 @@ alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold r
 # Git add no whitespace
 alias gaddnw="git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -"
 
+unalias gt
 alias gti="git" # Typos
+alias gt="git" # Typos
 alias g="git"
 function ga() {
   git add .
