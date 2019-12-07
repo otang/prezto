@@ -1,4 +1,11 @@
+# Enable performance profiling
 # zmodload zsh/zprof
+
+
+# This should disable '#' being interpreted as a special character
+unsetopt EXTENDED_GLOB
+disable -p '#'
+
 
 ###
 # POWERLEVEL9K customizations
