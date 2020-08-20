@@ -162,36 +162,20 @@ unalias gt
 alias gti="git" # Typos
 alias gt="git" # Typos
 alias g="git"
-function ga() {
-  git add .
-  git commit -a -m "$1"
-}
+
+alias ga="git add . && git commit -a -m"
 
 unalias gco
-function gco() {
-  git checkout $1 $2
-}
+alias gco="git checkout"
 
-function gsu() {
-  git submodule update --init --recursive
-}
+alias gsu="git submodule update --init --recursive"
 
-function gp() {
-  git pull
-}
+alias gp="git pull"
 
 unalias gd
-function gd() {
-  git diff -w $1
-}
+alias gd="git diff -w"
 
-function gb() {
-  git branch $1 $2
-}
-
-function gbd() {
-  git branch -d $1
-}
+alias gb="git branch"
 
 # Rails
 alias r="rails"
@@ -214,9 +198,6 @@ eval "$(rbenv init -)"
 ##
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
-
 
 
 
